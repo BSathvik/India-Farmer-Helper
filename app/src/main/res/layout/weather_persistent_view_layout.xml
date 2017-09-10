@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/weather_persistent_background"
+    android:layout_margin="7dp">
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/weather_persistent_status_icon"
+        android:src="@drawable/sunny_with_rain"
+        android:layout_margin="5dp"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weather_persistent_high_and_low"
+        android:textSize="35sp"
+        android:text="-°C , -°C"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="55dp"
+        android:textColor="#000000"/>
+
+</LinearLayout>

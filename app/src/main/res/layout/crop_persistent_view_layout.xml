@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/product_persistent_background"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+    android:layout_marginBottom="7dp">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/carrot"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/persistent_crop_name_and_price"
+            android:text="Corn: ₹21"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="@drawable/grey_rectangle"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="3dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bangalore (12 km)"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:id="@+id/persistent_market_location_and_distance"
+            />
+
+    </LinearLayout>
+</LinearLayout>

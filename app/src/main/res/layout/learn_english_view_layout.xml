@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/learn_english_view_background"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/learn_english_text_view"
+        android:textColor="@color/black"
+        android:text="Word: Definition/Translation…
+Used in a sentence"
+        android:textSize="25sp"
+        android:padding="10dp"/>
+
+</LinearLayout>

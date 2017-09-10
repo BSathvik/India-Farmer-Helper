@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/weather_question_background"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/day1weathericon"
+            android:layout_margin="3dp"
+            android:src="@drawable/sunny_icon"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="आज"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="9dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Low: 18°C"
+                        android:textColor="@color/black"
+                        android:id="@+id/day1LowTemp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="High: 24°C"
+                        android:textColor="@color/black"
+                        android:id="@+id/day1HighTemp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/dark_grey_rectangle"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/wind_icon"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="22dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="2 km/hr NW"
+                        android:textSize="11sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="-8dp"
+                        android:id="@+id/day1Wind"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/dark_grey_rectangle"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/water_drop_icon"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 cm"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/day1Rain"
+                    />
+            </LinearLayout>
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/dark_grey_rectangle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="कल"
+            android:textColor="@color/black"
+            android:layout_margin="7dp" />
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/cloudy_icon"
+            android:id="@+id/day2Icon"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16°C"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:id="@+id/day2Low"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20°C"
+                android:textSize="12sp"
+                android:id="@+id/day2High"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/dark_grey_rectangle"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 km/hr NE"
+            android:textColor="@color/black"
+            android:layout_margin="6dp"
+            android:id="@+id/day2Wind"/>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/dark_grey_rectangle"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/day2Rain"
+            android:text="0 cm"
+            android:textColor="@color/black"
+            android:layout_margin="6dp"
+            android:textSize="17sp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/dark_grey_rectangle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="परसों"
+            android:textColor="@color/black"
+            android:layout_margin="7dp"
+            />
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/rain_icon"
+            android:id="@+id/day3Icon"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16°C"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:id="@+id/day3Low"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20°C"
+                android:textSize="12sp"
+                android:id="@+id/day3High"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/dark_grey_rectangle"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 km/hr NE"
+            android:textColor="@color/black"
+            android:layout_margin="6dp"
+            android:id="@+id/day3Wind"/>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/dark_grey_rectangle"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/day3Rain"
+            android:text="4 cm"
+            android:textColor="@color/black"
+            android:layout_margin="6dp"
+            android:textSize="17sp"/>
+    </LinearLayout>
+
+</LinearLayout>
